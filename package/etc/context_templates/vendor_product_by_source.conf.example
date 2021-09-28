@@ -75,7 +75,7 @@ filter f_tzfixny {
 };
 filter f_cisco_esa {
     host("cisco_esa" type(glob))
-    #or netmask(xxx.xxx.xxx.xxx/xx)
+    or netmask(10.202.0.0/16)
 };
 filter f_spectracom_ntp {
     #Source uses invalid format can not use host must use IP or port
